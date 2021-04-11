@@ -160,6 +160,6 @@ class DataController extends Controller
             if ($item->is_real == 1) $counter++;
         }
 
-        return response()->json(['status' => 'success', 'msg' => 'Уровень комплаенса - ' . $counter / $data->count() * 100 . '%']);
+        return response()->json(['status' => 'success', 'msg' => 'Уровень комплаенса врач-пациент - ' . $counter / $data->count() * 100 . '%']);
     }
 }
